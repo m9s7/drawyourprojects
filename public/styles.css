@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.section_container {
+  @apply w-4/5 max-w-[1152px] mx-auto;
+}
+
+.card-line {
+  @apply w-[95%] opacity-85 h-2 border-0 rounded-e mb-12;
+}
+
+.batn_light {
+  @apply block box-border px-5 py-4 opacity-50 font-inter text-xs border-2 border-transparent rounded-lg transition-colors hover:opacity-100;
+}
+
+.batn_primary {
+  @apply block px-5 py-4 font-inter text-white whitespace-nowrap bg-black rounded-lg;
+}
+
+.h2 {
+  @apply font-dellarespira text-4xl;
+}
+
+.h3 {
+  @apply font-dellarespira text-2xl;
+}
+
+.p {
+  @apply font-opensans text-base leading-5;
+}
+
+@layer utilities {
+  .transform-style-preserve-3d {
+    transform-style: preserve-3d;
+  }
+}

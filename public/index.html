@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Draw Your Projects</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+
+    <script src="app.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Della+Respira&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="./src/output.css" rel="stylesheet" />
+
+    <style>
+      .background-animate {
+        background-size: 400%;
+
+        -webkit-animation: AnimationName 5s ease infinite;
+        -moz-animation: AnimationName 5s ease infinite;
+        animation: AnimationName 5s ease infinite;
+      }
+
+      @keyframes AnimationName {
+        0%,
+        100% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+      }
+    </style>
+    <!-- from-[#FF512F] to-[#DD2476] -->
+    <!-- from-[#e65c00] to-[#F9D423] -->
+    <!-- from-[#a8ff78] to-[#78ffd6] -->
+  </head>
+
+  <body>
+    <div id="header"></div>
+
+    <!-- HERO -->
+    <header
+      class="section_container flex justify-between py-16 min-h-[75vh] items-center"
+    >
+      <!-- TEXT -->
+      <div class="flex flex-col justify-center items-start gap-6 max-w-[55%]">
+        <h1 class="font-dellarespira text-5xl">
+          Design Without Limits, Outsource With Confidence.
+        </h1>
+        <p class="font-opensans text-base leading-5">
+          Delegate all of your interior and exterior designer work to our team
+          of experienced professionals. We offer cost-effective solutions.
+          Delivered within a week.
+        </p>
+        <a href="about.html" class="relative inline-block group">
+          <span
+            class="relative text-base z-10 block px-5 py-3 whitespace-nowrap overflow-hidden font-medium leading-tight text-gray-800 transition-colors duration-300 ease-out border-2 border-gray-900 rounded-lg group-hover:text-white"
+          >
+            <span
+              class="absolute inset-0 size-full px-5 py-3 rounded-lg bg-gray-50"
+            ></span>
+            <span
+              class="absolute left-0 size-48 -ml-2 transition-all duration-300 origin-top-right -rotate-90 -translate-x-full translate-y-12 bg-black group-hover:-rotate-180 ease-linear"
+            ></span>
+            <span class="relative">Learn More</span>
+          </span>
+          <span
+            class="absolute bottom-0 right-0 w-full h-12 -mb-1 -mr-1 transition-all duration-200 ease-linear bg-black rounded-lg group-hover:mb-0 group-hover:mr-0"
+            data-rounded="rounded-lg"
+          ></span>
+        </a>
+      </div>
+      <!-- IMAGE -->
+      <div class="max-w-[40%]">
+        <div
+          class="transform-style-preserve-3d hover:shadow-2xl"
+          data-tilt
+          data-tilt-glare="true"
+          data-tilt-max-glare="0.4"
+          data-tilt-scale="1.1"
+        >
+          <img
+            src="images/hero_img2.jpg"
+            alt="3d rendered castle"
+            class="w-full"
+          />
+        </div>
+      </div>
+      <!-- US -->
+      <!-- <div class="absolute bottom-[-130px] right-0 flex items-baseline">
+        <img
+          src="images\right-arrow-outline-svgrepo-com.svg"
+          alt="arrow"
+          class="h-20 rotate-45 scale-x-[-1]"
+        />
+        <h1 class="font-hand text-black text-7xl ml-5 tracking-wider">Us.</h1>
+      </div> -->
+    </header>
+
+    <main>
+      <!-- SERVICES -->
+      <section
+        class="section_container flex flex-col justify-between items-center py-16 gap-16"
+      >
+        <div class="flex flex-col justify-between items-center">
+          <h2 class="h2">Services</h2>
+          <p class="h3">
+            We provide professional design solutions for any space.
+          </p>
+        </div>
+
+        <div class="flex justify-between items-start gap-10">
+          <a
+            href="about.html#floorplans"
+            class="card bg-gradient-to-r from-[#FF512F] to-[#DD2476] text-black basis-full transform transition duration-150 hover:scale-105"
+          >
+            <div class="card-body gap-6">
+              <h3 class="card-title h3">Technical drawing and floor plans</h3>
+              <p class="font-opensans text-base mb-4 leading-5">
+                Precision meets vision in our technical drawing and floorplan
+                service. Our expert team translates concepts into detailed,
+                accurate layouts, ensuring every inch of your space is optimized
+                for functionality and aesthetics.
+              </p>
+            </div>
+          </a>
+
+          <a
+            href="about.html#videotours"
+            class="card bg-gradient-to-r from-[#e65c00] to-[#F9D423] text-black basis-full transform transition duration-150 hover:scale-105"
+          >
+            <div class="card-body gap-6">
+              <h3 class="card-title h3">Video tour</h3>
+              <p class="font-opensans text-base mb-4 leading-5">
+                Immerse yourself in your future space with our captivating video
+                tours. Experience the complete design in motion, from every
+                angle and perspective. It's the perfect way to envision your
+                finished space, whether it's an interior or exterior design
+                render.
+              </p>
+            </div>
+          </a>
+
+          <a
+            href="about.html#3drenders"
+            class="card bg-gradient-to-r from-[#a8ff78] to-[#78ffd6] text-black basis-full transform transition duration-150 hover:scale-105"
+          >
+            <div class="card-body gap-6">
+              <h2 class="card-title h3">3D Renders</h2>
+              <p class="font-opensans text-base mb-4 leading-5">
+                Explore the power of precise visualization with our high-quality
+                3D renders. From homes to offices and beyond, our renders
+                provide a realistic representation of your space, ensuring every
+                detail is captured with accuracy.
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <a href="about.html" class="relative inline-block group">
+          <span
+            class="relative text-base z-10 block px-5 py-3 whitespace-nowrap overflow-hidden font-medium leading-tight text-gray-800 transition-colors duration-300 ease-out border-2 border-gray-900 rounded-lg group-hover:text-white"
+          >
+            <span
+              class="absolute inset-0 size-full px-5 py-3 rounded-lg bg-gray-50"
+            ></span>
+            <span
+              class="absolute left-0 size-80 -ml-2 transition-all duration-300 origin-top-right -rotate-90 -translate-x-full translate-y-12 bg-black group-hover:-rotate-180 ease"
+            ></span>
+            <span class="relative">Learn More About Our Features</span>
+          </span>
+          <span
+            class="absolute bottom-0 right-0 w-full h-12 -mb-1 -mr-1 transition-all duration-200 ease-linear bg-black rounded-lg group-hover:mb-0 group-hover:mr-0"
+            data-rounded="rounded-lg"
+          ></span>
+        </a>
+      </section>
+
+      <!-- HOW IT WORKS NEW -->
+      <section
+        class="section_container flex flex-col justify-between items-center py-16 gap-6"
+      >
+        <h2 class="h2 mb-6">How it works?</h2>
+        <ul
+          class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical"
+        >
+          <li>
+            <div class="timeline-middle">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="h-5 w-5"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                  clip-rule="evenodd"
+                />
+                <!-- ALT ICON OPTIONS -->
+                <!-- <circle cx="10" cy="10" r="8" fill="black" /> -->
+                <!-- <circle
+                  cx="10"
+                  cy="10"
+                  r="8"
+                  fill="#FFFFFF"
+                  stroke="#000000"
+                  stroke-width="1"
+                /> -->
+                <!-- <circle
+                  cx="10"
+                  cy="10"
+                  r="8"
+                  stroke="#000000"
+                  stroke-width="1"
+                />
+                <text
+                  x="50%"
+                  y="50%"
+                  text-anchor="middle"
+                  alignment-baseline="middle"
+                  fill="#FFFFFF"
+                  font-size="10"
+                >
+                  3
+                </text> -->
+              </svg>
+            </div>
+            <div class="timeline-start md:text-end mb-10">
+              <p class="font-mono italic">Step 1</p>
+              <div class="text-lg font-black">Connect with Us</div>
+              The journey begins with a simple step - reaching out to us. You
+              can either fill out request form or book a call directly. We value
+              your time and preference.
+            </div>
+            <hr class="bg-gradient-to-b from-[#78ffd6] to-[#a8ff78]" />
+          </li>
+          <li>
+            <hr class="bg-[#a8ff78]" />
+            <div class="timeline-middle">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="h-5 w-5"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </div>
+            <div class="timeline-end mb-10">
+              <p class="font-mono italic">Step 2</p>
+              <div class="text-lg font-black">Define the Scope</div>
+              Once we connect, we engage in a collaborative discussion to define
+              the scope of your project. Your ideas, preferences, and vision
+              guide this crucial step.
+            </div>
+            <hr class="bg-gradient-to-b from-[#a8ff78] to-[#f9d423]" />
+          </li>
+          <li>
+            <hr class="bg-[#f9d423]" />
+            <div class="timeline-middle">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="h-5 w-5"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </div>
+            <div class="timeline-start md:text-end mb-10">
+              <p class="font-mono italic">Step 3</p>
+              <div class="text-lg font-black">Crafting a Quote</div>
+              Based on our agreed-upon project scope, we create a detailed
+              quote. Our transparent and itemized proposal ensures you
+              understand the breakdown of the project costs.
+            </div>
+            <hr class="bg-gradient-to-b from-[#f9d423] to-[#DD2476]" />
+          </li>
+          <li>
+            <hr class="bg-[#DD2476]" />
+            <div class="timeline-middle">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="h-5 w-5"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </div>
+            <div class="timeline-end mb-10">
+              <p class="font-mono italic">Step 4</p>
+              <div class="text-lg font-black">Agreement and Payment</div>
+              When you're satisfied with your proposal, we move to the agreement
+              phase. Once the agreement is in place, you send the payment,
+              marking the official start of your project.
+            </div>
+            <hr class="bg-gradient-to-b from-[#DD2476] to-[#78ffd6]" />
+          </li>
+
+          <li>
+            <hr class="bg-[#78ffd6]" />
+            <div class="timeline-middle">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="h-5 w-5"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </div>
+            <div class="timeline-start md:text-end mb-10">
+              <p class="font-mono italic">Step 5</p>
+              <div class="text-lg font-black">Commencement</div>
+              With payment received, our team swings into action. We kickstart
+              the creative process, ensuring your vision takes shape in the
+              initial draft.
+            </div>
+            <hr class="bg-gradient-to-b from-[#78ffd6] to-[#a8ff78]" />
+          </li>
+          <li>
+            <hr class="bg-[#a8ff78]" />
+            <div class="timeline-middle">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="h-5 w-5"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </div>
+            <div class="timeline-end mb-10">
+              <p class="font-mono italic">Step 6</p>
+              <div class="text-lg font-black">Initial draft within 5 days</div>
+              Your time is valuable, so within just 5 days, we present you with
+              the initial draft. This gives an early glimpse of the design
+              direction we're heading.
+            </div>
+            <hr class="bg-gradient-to-b from-[#a8ff78] to-[#f9d423]" />
+          </li>
+
+          <li>
+            <hr class="bg-[#f9d423]" />
+            <div class="timeline-middle">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="h-5 w-5"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </div>
+            <div class="timeline-start md:text-end mb-10">
+              <p class="font-mono italic">Step 7</p>
+              <div class="text-lg font-black">Feedback and Alignment</div>
+              Your feedback is crucial. We engage in rounds of refinement and
+              alignment to ensure the design aligns perfectly with your
+              expectations.
+            </div>
+            <hr class="bg-gradient-to-b from-[#f9d423] to-[#DD2476]" />
+          </li>
+          <li>
+            <hr class="bg-[#DD2476]" />
+            <div class="timeline-middle">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="h-5 w-5"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </div>
+            <div class="timeline-end mb-10">
+              <p class="font-mono italic">Step 8</p>
+              <div class="text-lg font-black">Completion and Delivery</div>
+              Once the design reaches its final form, we deliver the completed
+              project to you. Your satisfaction is our priority, and we're
+              committed to ensuring the end result surpasses your expectations.
+            </div>
+          </li>
+        </ul>
+        <!-- CTA -->
+        <p class="h2 mt-6">Ready to embark on this design journey with us?</p>
+        <a href="paypal.html" class="relative inline-block group">
+          <span
+            class="relative text-base z-10 block px-5 py-3 whitespace-nowrap overflow-hidden font-medium leading-tight text-gray-800 transition-colors duration-300 ease-out border-2 border-gray-900 rounded-lg group-hover:text-white"
+          >
+            <span
+              class="absolute inset-0 size-full px-5 py-3 rounded-lg bg-gray-50"
+            ></span>
+            <span
+              class="absolute left-0 size-48 -ml-2 transition-all duration-300 origin-top-right -rotate-90 -translate-x-full translate-y-12 bg-black group-hover:-rotate-180 ease"
+            ></span>
+            <span class="relative">START PROJECT</span>
+          </span>
+          <span
+            class="absolute bottom-0 right-0 w-full h-12 -mb-1 -mr-1 transition-all duration-200 ease-linear bg-black rounded-lg group-hover:mb-0 group-hover:mr-0"
+            data-rounded="rounded-lg"
+          ></span>
+        </a>
+      </section>
+
+      <!-- NEWSLETTER -->
+      <section
+        class="pb-16 bg-gradient-to-r from-[#FF512F] via-[#F9D423] to-[#a8ff78] background-animate"
+      >
+        <!-- old bg-[#DCBBA1]  -->
+        <div
+          class="section_container flex justify-center items-center gap-9 bg-white rounded-b-2xl pb-8"
+        >
+          <div class="w-4/12">
+            <p class="h2 mb-3">
+              Subscribe to <br />
+              newsletter!
+            </p>
+            <p class="font-opensans text-base opacity-55">
+              to keep up with new deals, receive monthly design newsletter.
+            </p>
+          </div>
+          <form onsubmit="return validateForm()" class="w-[334px] mt-4">
+            <label
+              class="block font-opensans font-bold text-xs opacity-60 uppercase tracking-wider mb-2"
+              for="email"
+              >Email Address *</label
+            >
+            <input
+              class="block border border-black opacity-50 rounded-lg w-full p-2 mb-4"
+              type="email"
+              id="email"
+              name="email"
+              required
+            />
+
+            <label
+              class="block font-opensans font-bold text-xs opacity-60 uppercase tracking-wider mb-2"
+              for="name"
+              >Name *</label
+            >
+            <input
+              class="block border border-black opacity-50 rounded-lg w-full p-2 mb-4"
+              type="text"
+              id="name"
+              name="name"
+              required
+            />
+
+            <label
+              class="block font-opensans font-bold text-xs opacity-60 uppercase tracking-wider mb-2"
+              for="company"
+              >Company Name *</label
+            >
+            <input
+              class="block border border-black opacity-50 rounded-lg w-full p-2 mb-4"
+              type="text"
+              id="company"
+              name="company"
+              required
+            />
+
+            <button class="relative inline-block group mt-1" type="submit">
+              <span
+                class="relative font-inter text-base z-10 block px-5 py-3 whitespace-nowrap overflow-hidden leading-tight text-white transition-colors duration-300 ease-out border-2 border-black rounded-lg group-hover:text-black"
+              >
+                <span
+                  class="absolute inset-0 size-full px-5 py-3 bg-black"
+                ></span>
+                <span
+                  class="absolute left-0 size-48 -ml-2 transition-all duration-300 origin-top-right -rotate-90 -translate-x-full translate-y-12 bg-white group-hover:-rotate-180 ease"
+                ></span>
+                <span class="relative">Sign Up</span>
+              </span>
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <div id="footer"></div>
+    </main>
+
+    <!-- SUBSCRIBE FUNCTIONALITY -->
+    <script>
+      function validateForm() {
+        var emailInput = document.getElementById("email");
+        var nameInput = document.getElementById("name");
+        var companyInput = document.getElementById("company");
+
+        const requestBody = {
+          operation: "create",
+          payload: {
+            Item: {
+              email: emailInput.value,
+              name: nameInput.value,
+              company: companyInput.value,
+            },
+          },
+        };
+
+        const options = {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(requestBody),
+        };
+
+        fetch(
+          "https://5n3vbacji5.execute-api.us-east-1.amazonaws.com/test/DynamoDBManager",
+          options
+        )
+          .then((response) => response.json())
+          .then((response) => {
+            console.log(response);
+            alert("You have subscribed!");
+          })
+          .catch((err) => console.error(err));
+
+        // Clear form fields after successful submission
+        emailInput.value = "";
+        nameInput.value = "";
+        companyInput.value = "";
+
+        return false;
+      }
+    </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.js"
+      integrity="sha512-0eckjEcIDNlyXFNRAL2Kecw71G5Df+nI2kazjvQrH/DZEHYOdy0UnP0gAlQGZMq4ZOOHpc2eYG15N3JZDA6pGg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>

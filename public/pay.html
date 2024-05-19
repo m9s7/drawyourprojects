@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Draw Your Projects</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="app.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Della+Respira&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="./src/output.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="header"></div>
+
+    <main>
+      <section class="section_container flex flex-col items-center py-16">
+        <p class="font-dellarespira text-5xl mb-2 whitespace-nowrap">
+          Simple Package Site Plan
+        </p>
+        <p class="p opacity-55 text-center">
+          Fill in the required Information to get started
+        </p>
+        <!-- Image gallery -->
+        <div
+          class="mx-auto mt-6 max-w-2xl sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:gap-x-8 lg:px-8"
+        >
+          <div
+            class="aspect-h-4 aspect-w-3 hidden overflow-hidden rounded-lg border border-black lg:block"
+          >
+            <img
+              src="images\product_item (1).jpg"
+              alt="Two each of gray, white, and black shirts laying flat."
+              class="h-full w-full object-cover object-center"
+            />
+          </div>
+          <div class="hidden lg:grid lg:grid-cols-1 lg:gap-y-8">
+            <div
+              class="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg border border-black"
+            >
+              <img
+                src="images\product_item (2).jpg"
+                alt="Model wearing plain black basic tee."
+                class="h-full w-full object-cover object-center"
+              />
+            </div>
+            <div
+              class="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg border border-black"
+            >
+              <img
+                src="images\product_item (3).jpg"
+                alt="Model wearing plain gray basic tee."
+                class="h-full w-full object-cover object-center"
+              />
+            </div>
+          </div>
+          <div
+            class="aspect-h-5 aspect-w-4 lg:aspect-h-4 lg:aspect-w-3 sm:overflow-hidden sm:rounded-lg border border-black"
+          >
+            <img
+              src="images\product_item (4).jpg"
+              alt="Model wearing plain white basic tee."
+              class="h-full w-full object-cover object-center"
+            />
+          </div>
+        </div>
+        <!-- Product info -->
+        <div
+          class="mx-auto max-w-2xl px-4 pb-16 pt-10 sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:grid-rows-[auto,auto,1fr] lg:gap-x-8 lg:px-8 lg:pb-24 lg:pt-16"
+        >
+          <div class="lg:col-span-2 lg:border-r lg:border-gray-200 lg:pr-8">
+            <h1
+              class="h3 font-semibold tracking-tight text-gray-900 sm:text-3xl"
+            >
+              PRODUCT DESCRIPTION
+            </h1>
+          </div>
+
+          <!-- Options -->
+          <div class="mt-4 lg:row-span-3 lg:mt-0">
+            <h2 class="sr-only">Product information</h2>
+            <p class="text-3xl tracking-tight text-gray-900">$89</p>
+
+            <form class="mt-10" action="test_paypal.html" method="get">
+              <!-- Colors -->
+              <div>
+                <label
+                  class="block font-inter font-bold text-xs opacity-60 uppercase tracking-wider mb-2"
+                  for="street-address"
+                >
+                  Address for site plan *
+                </label>
+                <input
+                  class="block border border-black opacity-50 rounded-lg w-full p-2 mb-4"
+                  type="text"
+                  id="street-address"
+                  name="street-address"
+                  autocomplete="street-address"
+                  enterkeyhint="next"
+                  required
+                />
+                <label
+                  class="block font-inter font-bold text-xs opacity-60 uppercase tracking-wider mb-2"
+                  for="city"
+                >
+                  CITY, STATE, ZIP *
+                </label>
+                <input
+                  class="block border border-black opacity-50 rounded-lg w-full p-2 mb-4"
+                  type="text"
+                  id="city"
+                  name="city"
+                  enterkeyhint="next"
+                  required
+                />
+                <label
+                  class="block font-inter font-bold text-xs opacity-60 uppercase tracking-wider mb-2"
+                  for="purpose"
+                >
+                  PURPOSE OF SITE PLAN?
+                </label>
+                <input
+                  class="block border border-black opacity-50 rounded-lg w-full p-2 mb-4"
+                  type="text"
+                  id="purpose"
+                  name="purpose"
+                  enterkeyhint="next"
+                />
+                <label
+                  class="block font-inter font-bold text-xs opacity-60 uppercase tracking-wider mb-2"
+                  for="newstruct"
+                >
+                  ADD NEW STRUCTURE? (SHED, FENCE, DECK, ETC.)
+                </label>
+                <select
+                  id="newstruct"
+                  class="select select-bordered border border-black w-full max-w-xs opacity-80 mb-4"
+                >
+                  <option selected>
+                    Only current property conditions. No new structures or
+                    features will be added.
+                  </option>
+                  <option>Add One Structure [+$20]</option>
+                  <option>Add Two Structures [+$30]</option>
+                  <option>Add Three Structures [+$40]</option>
+                  <option>Add Four Structures [+$50]</option>
+                </select>
+
+                <label
+                  class="block font-inter font-bold text-xs opacity-60 uppercase tracking-wider mb-2"
+                  for="files"
+                >
+                  UPLOAD HELPFUL FILES (SURVEY, SKETCH, ETC.) *OPTIONAL
+                </label>
+                <!-- chnage default theme to change color -->
+                <input
+                  id="files"
+                  name="files"
+                  type="file"
+                  class="file-input file-input-bordered w-full max-w-xs mb-4"
+                />
+
+                <label
+                  class="block font-inter font-bold text-xs opacity-60 uppercase tracking-wider mb-2"
+                  for="addons"
+                >
+                  ADDITIONAL OPTIONS
+                </label>
+                <div class="form-control mb-4" id="addons">
+                  <label class="label cursor-pointer">
+                    <span class="label-text font-inter opacity-80"
+                      >ADD TOPOGRAPHICAL LINES</span
+                    >
+                    <div class="flex justify-between gap-4 items-center">
+                      <span class="label-text font-inter opacity-80">+$40</span>
+                      <input type="checkbox" class="checkbox" />
+                    </div>
+                  </label>
+                  <label class="label cursor-pointer">
+                    <span class="label-text font-inter opacity-80"
+                      >ADD VICINITY MAP TO SITE PLAN</span
+                    >
+                    <div class="flex justify-between gap-4 items-center">
+                      <span class="label-text font-inter opacity-80">+$20</span>
+                      <input type="checkbox" class="checkbox" />
+                    </div>
+                  </label>
+                  <label class="label cursor-pointer">
+                    <span class="label-text font-inter opacity-80"
+                      >ADD IMPERVIOUS SURFACE CALCULATION</span
+                    >
+                    <div class="flex justify-between gap-4 items-center">
+                      <span class="label-text font-inter opacity-80">+$40</span>
+                      <input type="checkbox" class="checkbox" />
+                    </div>
+                  </label>
+                  <label class="label cursor-pointer">
+                    <span class="label-text font-inter opacity-80"
+                      >ADD CORNER ELEVATION</span
+                    >
+                    <div class="flex justify-between gap-4 items-center">
+                      <span class="label-text font-inter opacity-80">+$20</span>
+                      <input type="checkbox" class="checkbox" />
+                    </div>
+                  </label>
+                  <label class="label cursor-pointer">
+                    <span class="label-text font-inter opacity-80"
+                      >ADD CRITICAL AREAS FLOOD</span
+                    >
+                    <div class="flex justify-between gap-4 items-center">
+                      <span class="label-text font-inter opacity-80"
+                        ><span class="line-through">+$50</span> +$40</span
+                      >
+                      <input type="checkbox" class="checkbox" />
+                    </div>
+                  </label>
+                </div>
+              </div>
+
+              <button
+                type="submit"
+                class="relative inline-block group w-full max-w-xs"
+              >
+                <span
+                  class="relative text-base z-10 block px-5 py-3 whitespace-nowrap overflow-hidden font-medium leading-tight text-gray-800 transition-colors duration-300 ease-out border-2 border-gray-900 rounded-lg group-hover:text-white"
+                >
+                  <span
+                    class="absolute inset-0 w-full h-full px-5 py-3 rounded-lg bg-gray-50"
+                  ></span>
+                  <span
+                    class="absolute left-0 w-[340px] h-[340px] -ml-2 transition-all duration-300 origin-top-right -rotate-90 -translate-x-full translate-y-12 bg-black group-hover:-rotate-180 ease"
+                  ></span>
+                  <span class="relative w-full"
+                    ><p class="text-center me-1">CHECKOUT</p></span
+                  >
+                </span>
+                <span
+                  class="absolute bottom-0 right-0 w-full h-12 -mb-1 -mr-1 transition-all duration-200 ease-linear bg-black rounded-lg group-hover:mb-0 group-hover:mr-0"
+                  data-rounded="rounded-lg"
+                ></span>
+              </button>
+            </form>
+          </div>
+
+          <div
+            class="py-10 lg:col-span-2 lg:col-start-1 lg:border-r lg:border-gray-200 lg:pb-16 lg:pr-8 lg:pt-6"
+          >
+            <!-- Description and details -->
+            <div>
+              <h3 class="sr-only">Description</h3>
+
+              <div class="space-y-6">
+                <p class="text-base text-gray-900">
+                  Do you need a City permit for your projects?
+                </p>
+                <p class="text-base text-gray-900">
+                  Our Simple Package Site Plan (Plot Plan) will give you the
+                  Basics of Your Property.
+                </p>
+                <p class="text-base text-gray-900">
+                  We will use GIS, Satellite imagery to create the draft site
+                  plan. This site plan will include EXISTING primary building
+                  location, Property Lines, Roofline, Lot Dimensions, North
+                  Arrow, Scale, Measurements Between Major Features, Parcel ID.
+                </p>
+                <p class="text-base text-gray-900">
+                  Once we send you the draft site plan for review you can verify
+                  any dimensions and mark up the plan with any needed changes.
+                  We will make any adjustments completely free of charge.
+                </p>
+              </div>
+            </div>
+
+            <div class="mt-10">
+              <h3 class="text-sm font-medium text-gray-900">
+                This Plan can be used for:
+              </h3>
+
+              <div class="mt-4">
+                <ul role="list" class="list-disc space-y-2 pl-4 text-sm">
+                  <li class="text-gray-400">
+                    <span class="text-gray-600"
+                      >For Primary Building Permits</span
+                    >
+                  </li>
+                  <li class="text-gray-400">
+                    <span class="text-gray-600"
+                      >Rudimentary understanding of Property</span
+                    >
+                  </li>
+                  <li class="text-gray-400">
+                    <span class="text-gray-600"
+                      >Sketching out future constructions</span
+                    >
+                  </li>
+                  <li class="text-gray-400">
+                    <span class="text-gray-600"
+                      >Discussion with Contractor/Builder</span
+                    >
+                  </li>
+                  <li class="text-gray-400">
+                    <span class="text-gray-600"
+                      >For various other types of Permits: ADU permit, Deck
+                      permit, HOA permit, Demolition permit, Zoning Permit
+                      etc.</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="mt-10">
+              <h2 class="text-sm font-medium text-gray-900">Disclaimer</h2>
+
+              <div class="mt-4 space-y-6">
+                <p class="text-sm text-gray-600">
+                  The Site Plans we make are Not Certified and they are not
+                  intended to be used as a Legal Survey. Please verify with your
+                  building department that they DO NOT require a certified site
+                  plan prepared by a Surveyor, Architect, or Engineer.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div id="footer"></div>
+    </main>
+  </body>
+</html>

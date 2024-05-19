@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Draw Your Projects</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="app.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Della+Respira&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="./src/output.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="header"></div>
+
+    <main>
+      <section class="section_container flex flex-col items-center py-16">
+        <p class="h2 mb-2 whitespace-nowrap">Contact Us</p>
+        <p class="p opacity-55 text-center">
+          Fill out form with necessary information in order to receive your
+          quote.
+        </p>
+        <form
+          id="contactForm"
+          action="https://formsubmit.co/matijasreckovic97@gmail.com"
+          method="POST"
+          class="max-w-[440px] w-full mt-4 flex flex-col items-center py-4"
+        >
+          <label
+            class="block font-opensans font-bold text-xs opacity-60 uppercase tracking-wider mb-2"
+            for="email"
+            >Email Address *</label
+          >
+          <input
+            class="block border border-black opacity-50 rounded-lg w-full p-2 mb-4"
+            type="email"
+            id="email"
+            name="email"
+            required
+          />
+
+          <label
+            class="block font-opensans font-bold text-xs opacity-60 uppercase tracking-wider mb-2"
+            for="name"
+            >Name *</label
+          >
+          <input
+            class="block border border-black opacity-50 rounded-lg w-full p-2 mb-4"
+            type="text"
+            id="name"
+            name="name"
+            required
+          />
+
+          <label
+            class="block font-opensans font-bold text-xs opacity-60 uppercase tracking-wider mb-2"
+            for="company"
+            >Company Name *</label
+          >
+          <input
+            class="block border border-black opacity-50 rounded-lg w-full p-2 mb-4"
+            type="text"
+            id="company"
+            name="company"
+            required
+          />
+
+          <label
+            class="block font-opensans font-bold text-xs opacity-60 uppercase tracking-wider mb-2"
+            for="phone"
+            >Phone</label
+          >
+          <input
+            class="block border border-black opacity-50 rounded-lg w-full p-2 mb-4"
+            type="tel"
+            id="phone"
+            name="phone"
+            required
+          />
+
+          <button class="batn_primary text-base mt-4" type="submit">
+            Sign up
+          </button>
+        </form>
+      </section>
+
+      <div id="footer"></div>
+    </main>
+  </body>
+</html>

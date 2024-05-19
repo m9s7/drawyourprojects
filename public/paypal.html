@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Draw Your Projects</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="app.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Della+Respira&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="./src/output.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="header"></div>
+
+    <main>
+      <section class="section_container flex flex-col items-center py-16">
+        <div
+          class="bg-gradient-to-r from-[#a8ff78] to-[#78ffd6] flex flex-col items-center py-10 border border-black rounded-lg px-6 gap-4 justify-between"
+        >
+          <img
+            src="images\Simple-Package-Site-Plan-Price-List.jpg"
+            alt="floorplan"
+            class="rounded-lg drop-shadow-lg"
+          />
+          <p class="h3">Simple Package Site Plan</p>
+          <h1 class="font-inter font-medium text-5xl">$89</h1>
+          <ul class="list-['\2713'] list-inside w-3/4">
+            <li><span class="pl-3">Property Lines</span></li>
+            <li><span class="pl-3">Primary Structure</span></li>
+            <li><span class="pl-3">Lot Dimensions</span></li>
+            <li><span class="pl-3">North Arrow</span></li>
+            <li><span class="pl-3">Scale, Roofline</span></li>
+            <li>
+              <span class="pl-3">Measurements Between Major Features</span>
+            </li>
+            <li><span class="pl-3">Parcel ID</span></li>
+          </ul>
+          <p class="p pb-4">Highest in quality and accuracy</p>
+          <a
+            href="pay.html"
+            class="px-4 py-2 rounded-md border border-black bg-white text-black text-sm hover:shadow-[4px_4px_0px_0px_rgba(0,0,0)] transition duration-200"
+          >
+            Get this plan
+          </a>
+        </div>
+      </section>
+
+      <div id="footer"></div>
+    </main>
+  </body>
+</html>
